@@ -1,0 +1,22 @@
+body {
+  background: url("../img/pablo-merchan-montes-723425-unsplash.jpg");
+  background-size: 1800px;
+  color: white;
+  align-content: center;
+  margin-top: 40px;
+}
+
+hr {
+  background-color: white;
+}
+
+.container {
+  background-color: rgba(66, 65, 60, 0.5);
+  padding-top: 30px;
+}
+
+.btn {
+  background-color: goldenrod;
+  color: white;
+  padding: 3px;
+}
