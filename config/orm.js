@@ -44,8 +44,10 @@ const orm = {
       cb(result);
     });
   },
+
   insertOne: (table, cols, vals, cb) => {
-    const queryString = `INSERT INTO ${table} (${cols.toString()}) 
+    const queryString = `
+      INSERT INTO ${table} (${cols.toString()}) 
       VALUES (${printQuestionMarks(vals.length)})`;
 
     console.log(queryString);
@@ -57,8 +59,10 @@ const orm = {
       cb(result);
     });
   },
+
   updateOne: (table, objColVals, condition, cb) => {
-    const queryString = `UPDATE ${table}
+    const queryString = `
+      UPDATE ${table}
       SET ${objToSql(objColVals)}
       WHERE ${condition}`;
 

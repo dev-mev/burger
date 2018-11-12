@@ -1,5 +1,6 @@
+// shorthand for $(document).ready(...)
 $(function () {
-  $(".devour").on("click", function (event) {
+  $(".devour").on("click", function (_) {
     const id = $(this).data("id");
 
     const newDevourState = {
@@ -13,7 +14,7 @@ $(function () {
       function () {
         console.log("devoured", newDevourState);
         // Reload the page to get the updated list
-        location.reload();
+        window.location.reload();
       }
     );
   });
@@ -33,7 +34,7 @@ $(function () {
       function () {
         console.log("created new burger");
         // Reload the page to get the updated list
-        location.reload();
+        window.location.reload();
       }
     );
   });
